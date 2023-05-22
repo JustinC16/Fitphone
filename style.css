@@ -1,8 +1,76 @@
-.index-top{
+.logo{
+    width: 5%;
+    height: 5%;
+}
+/* nav styling */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.mainnav{
+    margin-left: auto;
+}
+/* nav style end */
+
+@media screen and (min-width: 1024px)
+{
+h1{
+    font-size: 2rem;
+}
+.two-sect{
     display: flex;   
 }
-.index-topsec{
-    width: 50%;
+.two-sectsize{
+    width: 50%;  
+}
+.hide-mobile{
+    display: block; 
+}
+}
+@media screen and (max-width: 1024px) {
+    .hide-mobile{
+        display: none; 
+    }
+}
+ul{
+    list-style-type: none;
+    padding: unset;
 }
 .index-button1{
     border-radius: 1rem;
@@ -14,4 +82,11 @@
     padding: .5rem .7rem;
     margin-left: -.3rem;
     border: none;   
+}
+footer{
+    background-color: black;
+    margin: 0 -0.5rem -1.5rem -0.5rem;
+    border-radius: 2rem 2rem 0 0 ;
+    padding: 8rem;
+    color: white;
 }

@@ -9,25 +9,30 @@
 </head>
 
 <body>
-    <header>
-        <h1>Image</h1>
-        <nav>
-            <ul>
-
-            </ul>
+    <header class="two-sect">
+        <img class="logo" src="logo.png" alt="">
+        <nav class="mainnav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </nav>
     </header>
 
     <main>
-        <section class="index-top">
-            <section class="index-topsec">
+        <section class="two-sect">
+            <section class="two-sectsize">
                 <h1>Fitphone is de tool om inzicht te krijgen in jouw smartphone gedrag</h1>
                 <p>Fontys Fitphone kan jou daar bij helpen</p>
                 <button class="index-button1">Lees meer</button>
                 <button class="index-button2">></button>
             </section>
 
-            <section class="index-topsec">
+            <section class="two-sectsize, hide-mobile">
                 <img src="index-img.png">
 
             </section>
@@ -37,11 +42,13 @@
             <h1>image placement</h1>
         </section>
 
-        <section class="index-thrd">
-            <section>
+        <section class="two-sect">
+            <section class="two-sectsize">
                 <h1>Hoe werkt FitPhone?</h1>
+                <button class="index-button1">Lees meer</button>
+                <button class="index-button2">></button>
             </section>
-            <section>
+            <section class="two-sectsize">
                 <p>Fitphone is ontworpen om je te helpen bewust te worden van je smartphonegebruik en de impact daarvan
                     op je leven. Met deze tool kun je zien hoeveel tijd je dagelijks besteedt aan je telefoon en aan
                     welke apps. Op basis van deze informatie kun je beslissen welke stappen je wilt nemen om je gedrag
@@ -52,11 +59,50 @@
                 </p>
             </section>
         </section>
+        <section>
+            <section>
+                <h1>Onderzoek</h1>
+            </section>
+            <section>
+                <h2>Stap 1 - Onderzoek</h2>
+                <p>Met een QuickScan kun je inzicht krijgen in je smartphonegedrag en betere ekuzes maken over waar je
+                    je aandacht op wilt richten. Het is aan te raden om dit voor langere tijd te doen om meer inzicht te
+                    krijgen en uitdagingen aan te gaan</p>
+                <button class="index-button2">-</button>
+                <button class="index-button2">></button>
+                <button class="index-button1">Lees meer</button>
+                <button class="index-button2">></button>
+            </section>
+        </section>
     </main>
 
     <footer>
+        <section class="two-sect">
+            <section class="two-sectsize">
+                <h1>Blijf op de hoogte</h1>
+                <p>Krijg maandelijkse updates over events & nieuwe features</p>
+            </section>
+            <section class="two-sectsize">
+                <h2>Socials</h2>
+                <ul style="list-style-type: none, padding: none;">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </section>
+        </section>
 
     </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
 </body>
 
 </html>
