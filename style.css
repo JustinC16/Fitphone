@@ -1,0 +1,17 @@
+.index-top{
+    display: flex;   
+}
+.index-topsec{
+    width: 50%;
+}
+.index-button1{
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    border: none;
+}
+.index-button2{
+    border-radius: 1rem;
+    padding: .5rem .7rem;
+    margin-left: -.3rem;
+    border: none;   
+}
